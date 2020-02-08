@@ -1,0 +1,21 @@
+INSERT INTO TRANSACTIONS (account_no, amount, description, trx_date) VALUES
+  (8872838283, 12300, 'FUND TRANSFER', to_date('20190912111111', 'yyyymmddhh24miss')),
+  (8872838283, 112300, 'ATM WITHDRWAL', to_date('20190911111111', 'yyyymmddhh24miss')),
+  (8872838283, 122300, 'FUND TRANSFER', to_date('20191011111111', 'yyyymmddhh24miss')),
+  (8872838283, 123300, '3rd Party FUND TRANSFER', to_date('20191111111111', 'yyyymmddhh24miss')),
+  (8872838283, 124300, '3rd Party FUND TRANSFER', to_date('20190811111111', 'yyyymmddhh24miss')),
+  (8872838283, 1255300, '3rd Party FUND TRANSFER', to_date('20190711111111', 'yyyymmddhh24miss')),
+  (8872838283, 1211300, 'BILL PAYMENT', to_date('20190811111111', 'yyyymmddhh24miss')),
+  (8872838299, 112122300, 'FUND TRANSFER', to_date('20190911111111', 'yyyymmddhh24miss')),
+  (8872838299, 1223123300, 'FUND TRANSFER', to_date('20190911111111', 'yyyymmddhh24miss')),
+  (8872838299, 11112300, 'FUND TRANSFER', to_date('20190911111111', 'yyyymmddhh24miss')),
+  (8872838299, 1222300, 'BILL PAYMENT', to_date('20190911111111', 'yyyymmddhh24miss')),
+  (6872838260, 100, 'BILL PAYMENT', to_date('20190911111111', 'yyyymmddhh24miss')),
+  (6872838260, 122300, 'BILL PAYMENT', to_date('20190912111111', 'yyyymmddhh24miss')),
+  (6872838260, 1232300, 'BILL PAYMENT', to_date('20190913111111', 'yyyymmddhh24miss')),
+  (6872838260, 1232300, 'BILL PAYMENT', to_date('20190911111111', 'yyyymmddhh24miss')),
+  (6872838260, 12123300, 'BILL PAYMENT', to_date('20190911111111', 'yyyymmddhh24miss')),
+  (6872838260, 1992300, 'BILL PAYMENT', to_date('20190911111111', 'yyyymmddhh24miss')),
+  (6872838260, 1289300, 'BILL PAYMENT', to_date('20190913111111', 'yyyymmddhh24miss')),
+  (6872838260, 9912300, 'FUND TRANSFER', to_date('20190914111111', 'yyyymmddhh24miss'));
+  
