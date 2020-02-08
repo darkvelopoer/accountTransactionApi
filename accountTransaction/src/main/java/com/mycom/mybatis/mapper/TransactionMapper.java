@@ -3,9 +3,12 @@ package com.mycom.mybatis.mapper;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 
+import com.mycom.application.dto.AuthTokenDTO;
 import com.mycom.application.dto.TransactionDTO;
+import com.mycom.mybatis.model.Transaction;
 
 public interface TransactionMapper {
 
@@ -43,4 +46,9 @@ public interface TransactionMapper {
 			+ ") paging"
 			+ ") where rnum between #{startNum} and #{endNum}")
 	List<TransactionDTO> getTransactionsByCustomerId(Map<String, String> params);
+	
+	@Insert("Insert into TRANSACTIONS(account_no, amount, description, trx_date) "
+			+ "values (#{accountNo}, #{amount}, #{description}, to_date(#{trxTimestamp}, 'yyyymmddhh24miss') ) ")
+	public Integer saveTransaction(Transaction transaction);
+	
 }

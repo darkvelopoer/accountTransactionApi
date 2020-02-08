@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.mycom.application.dto.TransactionDTO;
 import com.mycom.mybatis.mapper.TransactionMapper;
+import com.mycom.mybatis.model.Transaction;
 
 @Service
 public class TransactionServiceImpl implements TransactionService{
@@ -22,9 +23,6 @@ public class TransactionServiceImpl implements TransactionService{
 	
 	public List<TransactionDTO> getTransactionsByAccountNo(Map<String, String> params){
 		List<TransactionDTO> transactions = transactionMapper.getTransactionsByAccountNo(params);
-/*		for(TransactionDTO dto:transactions) {
-			dto.set String.format("%.2f", dto.getAmount()/100) ;
-		}*/
 		return transactions;
 	}
 	
@@ -36,5 +34,13 @@ public class TransactionServiceImpl implements TransactionService{
 	public List<TransactionDTO> getTransactionsByCustomerId(Map<String, String> params) {
 		List<TransactionDTO> transactions = transactionMapper.getTransactionsByCustomerId(params);
 		return transactions;
+	}
+	
+	public void saveTransaction(Transaction transaction) {
+		transaction.setTrxTimestamp(transaction.getTrxDate().replace("-", "") + transaction.getTrxTime().replace(":", ""));
+		double d = Double.parseDouble(transaction.getAmount())*100;
+		int amtCents = (int)d;
+		transaction.setAmount(amtCents+"");
+		transactionMapper.saveTransaction(transaction);
 	}
 }
