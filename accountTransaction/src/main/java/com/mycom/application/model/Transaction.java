@@ -1,4 +1,4 @@
-package com.mycom.mybatis.model;
+package com.mycom.application.model;
 
 import java.io.Serializable;
 
