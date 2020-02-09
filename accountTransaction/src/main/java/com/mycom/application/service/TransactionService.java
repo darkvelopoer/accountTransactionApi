@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.mycom.application.dto.TransactionDTO;
-import com.mycom.mybatis.model.Transaction;
+import com.mycom.application.model.Transaction;
 
 public interface TransactionService {
 	public List<TransactionDTO> getTransactions(Map<String, String> params);

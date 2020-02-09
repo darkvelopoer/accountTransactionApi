@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Select;
 
 import com.mycom.application.dto.AuthTokenDTO;
 import com.mycom.application.dto.TransactionDTO;
-import com.mycom.mybatis.model.Transaction;
+import com.mycom.application.model.Transaction;
 
 public interface TransactionMapper {
 

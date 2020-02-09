@@ -9,8 +9,8 @@ import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.repeat.RepeatStatus;
 
+import com.mycom.application.model.Transaction;
 import com.mycom.application.service.TransactionService;
-import com.mycom.mybatis.model.Transaction;
 
 public class ReadTask implements Tasklet{
 	private final Log log = LogFactory.getLog(this.getClass());

@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import com.mycom.mybatis.model.Transaction;
+import com.mycom.application.model.Transaction;
 
 public class ReadProcessor {
 	

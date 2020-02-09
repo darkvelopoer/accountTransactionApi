@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mycom.application.dto.TransactionDTO;
+import com.mycom.application.model.Transaction;
 import com.mycom.mybatis.mapper.TransactionMapper;
-import com.mycom.mybatis.model.Transaction;
 
 @Service
 public class TransactionServiceImpl implements TransactionService{
